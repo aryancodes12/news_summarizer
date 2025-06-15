@@ -23,7 +23,11 @@ def startup_event():
 def get_news():
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT title, summary, url, thumbnail, timestamp, category FROM news ORDER BY timestamp DESC")
+    cursor.execute("""
+    SELECT title, summary, url, thumbnail, timestamp, category 
+    FROM news 
+    ORDER BY timestamp DESC LIMIT 50
+""")
     rows = cursor.fetchall()
     conn.close()
     return [
@@ -35,5 +39,5 @@ def get_news():
             "timestamp": row[4],
             "category": row[5]
         }
-        for row in rows
+        for row in rows 
     ]

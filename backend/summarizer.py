@@ -2,7 +2,7 @@ from transformers import pipeline
 
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
-def summarize_text(text, max_tokens=100):
+def summarize_text(text, max_tokens=300):
     if not text or len(text.split()) < 20:
         return text
     try:

@@ -6,10 +6,18 @@ body {
   color: #222;
 }
 
+body {
+  background-image: url("/frontend/image/black.jpg"); /* or full URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional: for parallax effect */
+}
+
 header {
   background: #0b5ed7;
   color: white;
-  padding: 1rem;
+  /* padding: 1rem; */
   text-align: center;
 }
 
@@ -73,6 +81,7 @@ header h1 {
 }
 
 .tagline {
+  font-family: 'Orbitron', sans-serif;
   margin-top: 0.5rem;
   font-size: 1rem;
   font-weight: 400;
@@ -80,6 +89,7 @@ header h1 {
 }
 
 footer {
+  font-family: 'Orbitron', sans-serif;
   background-color: #f1f1f1;
   text-align: center;
   padding: 1rem;
@@ -156,3 +166,64 @@ footer .small {
   100% { opacity: 0.4; }
 }
 
+.category {
+  display: inline-block;
+  background-color: #eee;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.category.Technology { background: #2e88ff; color: #fff; }
+.category.Politics { background: #f44336; color: #fff; }
+.category.Sports { background: #4caf50; color: #fff; }
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  letter-spacing: 2px;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  word-break: break-word;
+
+}
+
+footer .disclaimer {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+body {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header, footer, .tagline {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+ 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color:inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-links & a:hover {
+  color:0076e6;
+}

@@ -16,11 +16,12 @@ async function loadNews() {
       card.className = "article";
 
       card.innerHTML = `
-        <img src="${article.thumbnail || 'https://via.placeholder.com/350x180'}" alt="News Thumbnail">
-        <h2>${article.title}</h2>
-        <p>${article.summary}</p>
-        <a href="${article.url}" target="_blank">Read more →</a>
-      `;
+    <span class="category">${article.category || "General"}</span>
+    <img src="${article.thumbnail || 'https://via.placeholder.com/350x180'}" alt="News Thumbnail">
+    <h2>${article.title}</h2>
+    <p>${article.summary}</p>
+    <a href="${article.url}" target="_blank">Read more ➜</a>
+`;
 
       container.appendChild(card);
     });
