@@ -26,7 +26,7 @@ def get_news():
     cursor.execute("""
     SELECT title, summary, url, thumbnail, timestamp, category 
     FROM news 
-    ORDER BY timestamp DESC LIMIT 50
+    ORDER BY timestamp DESC LIMIT 80
 """)
     rows = cursor.fetchall()
     conn.close()

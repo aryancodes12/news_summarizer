@@ -9,7 +9,7 @@ def infer_category(text):
     text = text.lower()
     if any(word in text for word in ["election", "government", "president", "policy"]):
         return "Politics"
-    elif any(word in text for word in ["tech", "ai", "startup", "software", "app"]):
+    elif any(word in text for word in ["tech", "ai", "startup", "software", "app", "hardware"]):
         return "Technology"
     elif any(word in text for word in ["stock", "crypto", "market", "invest"]):
         return "Finance"

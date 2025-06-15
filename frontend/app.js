@@ -17,7 +17,7 @@ async function loadNews() {
 
       card.innerHTML = `
     <span class="category">${article.category || "General"}</span>
-    <img src="${article.thumbnail || 'https://via.placeholder.com/350x180'}" alt="News Thumbnail">
+    <img src="${article.thumbnail || 'https://via.placeholder.com/350x180'}" alt="Unable to load image. Sorry for inconvenience.">
     <h2>${article.title}</h2>
     <p>${article.summary}</p>
     <a href="${article.url}" target="_blank">Read more ➜</a>
@@ -35,4 +35,4 @@ async function loadNews() {
 
 // Initial load and auto-refresh every 3 minutes
 loadNews();
-setInterval(loadNews, 180000);
+setInterval(loadNews, 120000);
