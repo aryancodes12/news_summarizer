@@ -1,16 +1,29 @@
-# 📰 AI News Summarizer
+# 📰 News Summarizer
 
-An intelligent full-stack news app that fetches the latest headlines and summarizes them using a Hugging Face transformer model. Built with **FastAPI** and a responsive **HTML/CSS/JS** frontend.
-
-## ✨ Features
-
-- Fetches trending news headlines via NewsAPI or custom scraper
-- Auto-summarizes articles using Transformers (e.g., `t5-small`)
-- Responsive frontend displays summaries beautifully
-- Auto-refresh every 3 minutes
-- Local caching via SQLite (`news.db`)
-- Smooth loading experience with dynamic updates
+This is an AI-powered news summarization tool that takes long-form news content and generates a short summary using NLP.
 
 ---
 
-## 🧱 Project Structure
+## 🔧 Features
+
+- Generates concise summaries using AI
+- Built using Python and FastAPI
+- Clean and minimal setup
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- FastAPI
+- Hugging Face Transformers (for summarization)
+- HTML / CSS (for basic frontend)
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/aryancodes12/news_summarizer.git
+cd news_summarizer
