@@ -2,7 +2,7 @@ import requests
 from backend.db import get_db_connection
 from backend.summarizer import summarize_text
 
-API_KEY = "pub_1ebf1665807446c9b4f8d75efaa9ea0d"
+API_KEY = "your_newsdata_api_key_here"
 
 
 def infer_category(text):
