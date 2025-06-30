@@ -21,6 +21,12 @@ This is an AI-powered news summarization tool that takes long-form news content 
 
 ---
 
+## 🤖 Copilot Contribution
+
+This project was developed with the help of **GitHub Copilot** to speed up the coding process. All generated code was manually reviewed and adjusted for correctness and clarity.
+
+---
+
 ## 🚀 How to Run
 
 1. **Clone the repository**
