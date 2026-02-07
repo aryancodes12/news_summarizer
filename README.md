@@ -46,3 +46,4 @@ API_KEY = "your_newsdata_api_key_here"
 ```bash
 git clone https://github.com/aryancodes12/news_summarizer.git
 cd news_summarizer
+```
